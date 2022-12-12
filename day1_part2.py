@@ -1,6 +1,7 @@
 ## Part 2 ## 
 import day1_part1 as day1
 
+# sort sums and choose largest three
 food = day1.food_sums( )
 sort_food = sorted(food, reverse = True)
 top_three = sort_food[0:3]

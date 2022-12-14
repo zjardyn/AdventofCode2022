@@ -19,6 +19,7 @@ for i in data:
         pair_two_seq = set([int(pair_two[0])])
     else:
         pair_two_seq = set(range1(int(pair_two[0]), int(pair_two[1])))
+    # if one set is a subset of the other increment the counter
     if pair_one_seq.issubset(pair_two_seq) or pair_two_seq.issubset(pair_one_seq):
         sum += 1
 

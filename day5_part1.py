@@ -2,6 +2,7 @@ from aocd import get_data, submit
 
 data = get_data(day=5, year=2022).splitlines()
 
+# move the amount of containers from on stack to another
 def move_containers(To, From, Amount):
     for i in range(Amount):
         containers[To - 1].insert(0, containers[From - 1].pop(0))
@@ -45,5 +46,3 @@ print(first_on_stack)
 
 if __name__ == '__main__':                                                             
     submit(first_on_stack, part = 1, day = 5, year = 2022)
-
-
